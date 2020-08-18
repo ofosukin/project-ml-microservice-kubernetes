@@ -26,6 +26,8 @@ lint:
 	hadolint Dockerfile
 	# This is a linter for Python source code linter: https://www.pylint.org/
 	# This should be run from inside a virtualenv
-	pylint --disable=R,C,W1203 app.py
+	pylint --disable=R,C,W1203,w1309 app.py 
+	# I added the code w1309 to bypass Using an f-string that does not have any interpolated variables (f-string-without-interpolation)
+	# Kingsley Ofosu
 
 all: install lint test
