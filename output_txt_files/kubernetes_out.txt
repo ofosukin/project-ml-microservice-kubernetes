@@ -1,0 +1,15 @@
+(.devops) bash-4.2$ ./run_kubernetes.sh 
+deployment.apps/api created
+NAME                   READY   STATUS              RESTARTS   AGE
+api-74b584d67f-xwqcr   0/1     ContainerCreating   0          1s
+error: unable to forward port because pod is not running. Current status=Pending
+(.devops) bash-4.2$ kubectl get pods                                                                                                               
+NAME                   READY   STATUS    RESTARTS   AGE
+api-74b584d67f-xwqcr   1/1     Running   0          2m17s
+(.devops) bash-4.2$ ./run_kubernetes.sh 
+Error from server (AlreadyExists): deployments.apps "api" already exists
+NAME                   READY   STATUS    RESTARTS   AGE
+api-74b584d67f-xwqcr   1/1     Running   0          2m37s
+Forwarding from 127.0.0.1:8000 -> 5000
+Forwarding from [::1]:8000 -> 5000
+Handling connection for 8000
