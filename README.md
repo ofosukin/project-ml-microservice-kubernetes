@@ -1,5 +1,4 @@
-[![CircleCI](https://circleci.com/gh/ofosukin/project-ml-microservice-kubernetes
-.svg?style=svg)](https://app.circleci.com/pipelines/github/ofosukin/project-ml-microservice-kubernetes)
+[![CircleCI](https://circleci.com/gh/vanarothorn/Udacity-CloudDevOps-Project4.svg?style=svg)](https://circleci.com/gh/vanarothorn/Udacity-CloudDevOps-Project4)
 
 ## Project Overview
 
